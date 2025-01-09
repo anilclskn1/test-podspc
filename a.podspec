@@ -33,8 +33,9 @@ Pod::Spec.new do |spec|
 
     # Use remote source from Artifactory
     spec.source = {
-        :http => 'https://ro-artifactory.devtokeninc.com/artifactory/PublicLibraries/odero/oderopaysdk/oderopaysdkios/0.1.4/',
+        :http => 'https://ro-artifactory.devtokeninc.com/artifactory/PublicLibraries/odero/oderopaysdk/oderopaysdkios/0.1.4/oderopaysdkios-0.1.4.xcframework.zip',
         :type => 'zip',
+        :headers => ['Accept: application/octet-stream']
     }
 
     # Set vendored framework path directly to the framework
